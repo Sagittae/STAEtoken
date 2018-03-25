@@ -1,0 +1,21 @@
+{
+  "name": "STAEtoken",
+  "version": "1.0.0",
+  "description": "STAEtoken ERC20 Token smart contract",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/soljitsu combine --src-dir=./src --dep-dir=./node_modules --dest-dir=./contracts",
+    "ganache": "./node_modules/.bin/ganache-cli",
+    "test": "./node_modules/.bin/truffle test"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "ganache-cli": "^6.1.0",
+    "soljitsu": "^0.1.3",
+    "truffle": "^4.1.3",
+    "zeppelin-solidity": "^1.7.0"
+  }
+}
